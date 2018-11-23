@@ -18,17 +18,20 @@ degres = 120
 
 def calculate_percentage(x_start, x_stop, img_w):
     middle = ((x_stop - x_start) / 2) + x_start
+    logging.debug('Percentage: ' + str(middle / img_w))
     return middle / img_w
     
 def calculate_left_deg(percentage):
     degres_half = degres / 2
-    percentage_calculation = 0.100 - (percentage * 2)
+    percentage_calculation = 1.0 - (percentage * 2)
+    logging.debug('calculate_left_deg: ' + str(degres_half * percentage_calculation))
     
     return degres_half * percentage_calculation
 
 def calculate_right_deg(percentage):
     degres_half = degres / 2
     percentage = percentage - 0.50
+    logging.debug('calculate_right_deg: ' + str(degres_half * (percentage * 2)))
     
     return degres_half * (percentage * 2)
     
@@ -47,7 +50,9 @@ def process_bottle(data):
     percentage = calculate_percentage(data[0], data[1], img_w)
     print('Percentage: ' + str(percentage))
     
-    if 0.53 >= percentage >= 0.47:
+    deviation = 0.07
+    
+    if 0.50 + deviation >= percentage >= 0.50 - deviation:
         print('Forward pass')
         api.move_forward(30)
         return move_enum.FORWARD
@@ -60,7 +65,7 @@ def process_bottle(data):
         api.turn_left(calculate_left_deg(percentage))
         return move_enum.LEFT
     
-    return move_enum.NONE
+    return move_enum.NONE # Usueless line
 
 def filter_results(results):
     result = []
@@ -96,7 +101,31 @@ def detect(filename):
         return;
     
     process_bottle(result[0][1:-1])
+
+def navigate_to_bottle(result):
+    logging.debug('inside navigate_to_bottle func')
+    logging.debug('result of detection: ')
+    logging.debug(result)
+    process_result = process_bottle(result[0][1:-1])
     
+    while True:
+        img = get_img()
+        yolo.detect_from_cvmat(img)
+        vision_result = filter_results(yolo.result)
+        logging.debug('result of detection: ')
+        logging.debug(vision_result)
+        if len(vision_result) == 0: # no catch
+            logging.error('vision_result no catch ...')
+            if process_result == move_enum.LEFT:
+                api.turn_left(5)
+            elif process_result == move_enum.RIGHT:
+                api.turn_right(5)
+            else:
+                api.move_forward(20)
+            pass
+        logging.debug('I can see a bottle')
+        result = process_bottle(result[0][1:-1])
+        
 
 def ultimate_finding_cycle():
     
@@ -105,13 +134,11 @@ def ultimate_finding_cycle():
         yolo.detect_from_cvmat(img)
         result = filter_results(yolo.result)
         if len(result) == 1:
-            result = process_bottle(result[0][1:-1])
-            if result != move_enum.FORWARD:
-                api.move_forward(30)
-            if result != move_enum.NONE:
-                break
-        api.turn_right(2.1)
-        api.move_forward(1)
+            navigate_to_bottle(result)
+            pass
+        logging.debug('ultimate_finding_cycle can´t see anythink')
+        api.turn_right(10)
+        #api.move_forward(1)
         
         
         

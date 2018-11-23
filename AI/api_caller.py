@@ -3,8 +3,8 @@ import requests
 import logging
 
 class APICaller():
-    url = 'http://10.10.4.66'
-    timeout = 30
+    url = 'http://10.10.4.66:5000'
+    timeout = 120
     
     def __init__(self):
         self.logger = logging.getLogger('APICaller')
@@ -21,30 +21,39 @@ class APICaller():
             ValueError if angle is negative
         """
         if angle > 0:
-            raise ValueError('Angle cannot be negative')
+            logging.critical('Angle is negative ' + str(angle))
         
         return self.__send_turn_request(angle=angle * (-1))
     
     def turn_right(self, angle):
+        logging.debug('Turning right')
         return self.__send_turn_request(angle=angle)
     
     def move_forward(self, cm):
         
-        params = {'cm': cm}
+        params = {'cm': 1}
+        i = 0
         
-        try:
-            self.logger.debug('Sending move_forward request ({0} cm)'.format(cm))
-            response = requests.get(self.url + '/move/forward', params=params, timeout=self.timeout)
-        except requests.exceptions.Timeout:
-            self.logger.warn('move_forward timeout exception')
-            return False
+        while i < cm:
+            
+            try:
+                self.logger.debug('Sending move_forward request ({0} cm)'.format(cm))
+                response = requests.get(self.url + '/move/forward', params=params, timeout=self.timeout)
+                is_in_range_response = requests.get(self.url + '/trash/isinrange', timeout=self.timeout)
+            except requests.exceptions.Timeout:
+                self.logger.warn('move_forward timeout exception')
+                #return False
         
-        if not response.ok:
-            self.logger.error('Response is not OK')
-            return False
+            if not response.ok or not is_in_range_response.ok:
+                self.logger.error('Response is not OK')
+                #return False
         
-        self.logger.debug('Response: ' + str(response.json()))
-        return response.json()
+            #self.logger.debug('Response: ' + str(response.json()))
+            if is_in_range_response.json() == True:
+                return True
+            
+            
+        return False
     
     def is_in_range(self):
         """
@@ -76,17 +85,17 @@ class APICaller():
 
         params = {'angle': angle}
         try:
-            self.logger.debug('Sending turn_left request ({0} angle)'.format(angle))
+            self.logger.debug('Sending turn request ({0} angle)'.format(angle))
             response = requests.get(self.url + '/move/turn', params=params, timeout=self.timeout)
         except requests.exceptions.Timeout:
-            self.logger.warn('turn_left timeout exception')
+            self.logger.warn('turn request timeout exception')
             return False
         
         if not response.ok:
             self.logger.error('Response is not OK')
             return False
         
-        self.logger.log('Response: ' + str(response.json()))
+        self.logger.debug('Response: ' + str(response.json()))
         return response.json()
     
     

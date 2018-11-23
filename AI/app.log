@@ -1,14 +1,96 @@
 WARNING:tensorflow:From E:\python\lib\site-packages\tensorflow\python\util\tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
 Instructions for updating:
 Use `tf.global_variables_initializer` instead.
-INFO:tensorflow:Restoring parameters from weights/YOLO_small.ckpt
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /img_test.jpg HTTP/1.1" 200 1231549
 WARNING:tensorflow:From E:\python\lib\site-packages\tensorflow\python\util\tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
 Instructions for updating:
 Use `tf.global_variables_initializer` instead.
 INFO:tensorflow:Restoring parameters from weights/YOLO_small.ckpt
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /img_test.jpg HTTP/1.1" 200 1231549
-DEBUG:APICaller:Sending move_forward request (30 cm)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET / HTTP/1.1" 200 None
+DEBUG:PIL.Image:Importing BlpImagePlugin
+DEBUG:PIL.Image:Importing BmpImagePlugin
+DEBUG:PIL.Image:Importing BufrStubImagePlugin
+DEBUG:PIL.Image:Importing CurImagePlugin
+DEBUG:PIL.Image:Importing DcxImagePlugin
+DEBUG:PIL.Image:Importing DdsImagePlugin
+DEBUG:PIL.Image:Importing EpsImagePlugin
+DEBUG:PIL.Image:Importing FitsStubImagePlugin
+DEBUG:PIL.Image:Importing FliImagePlugin
+DEBUG:PIL.Image:Importing FpxImagePlugin
+DEBUG:PIL.Image:Image: failed to import FpxImagePlugin: No module named 'olefile'
+DEBUG:PIL.Image:Importing FtexImagePlugin
+DEBUG:PIL.Image:Importing GbrImagePlugin
+DEBUG:PIL.Image:Importing GifImagePlugin
+DEBUG:PIL.Image:Importing GribStubImagePlugin
+DEBUG:PIL.Image:Importing Hdf5StubImagePlugin
+DEBUG:PIL.Image:Importing IcnsImagePlugin
+DEBUG:PIL.Image:Importing IcoImagePlugin
+DEBUG:PIL.Image:Importing ImImagePlugin
+DEBUG:PIL.Image:Importing ImtImagePlugin
+DEBUG:PIL.Image:Importing IptcImagePlugin
+DEBUG:PIL.Image:Importing JpegImagePlugin
+DEBUG:PIL.Image:Importing Jpeg2KImagePlugin
+DEBUG:PIL.Image:Importing McIdasImagePlugin
+DEBUG:PIL.Image:Importing MicImagePlugin
+DEBUG:PIL.Image:Image: failed to import MicImagePlugin: No module named 'olefile'
+DEBUG:PIL.Image:Importing MpegImagePlugin
+DEBUG:PIL.Image:Importing MpoImagePlugin
+DEBUG:PIL.Image:Importing MspImagePlugin
+DEBUG:PIL.Image:Importing PalmImagePlugin
+DEBUG:PIL.Image:Importing PcdImagePlugin
+DEBUG:PIL.Image:Importing PcxImagePlugin
+DEBUG:PIL.Image:Importing PdfImagePlugin
+DEBUG:PIL.Image:Importing PixarImagePlugin
+DEBUG:PIL.Image:Importing PngImagePlugin
+DEBUG:PIL.Image:Importing PpmImagePlugin
+DEBUG:PIL.Image:Importing PsdImagePlugin
+DEBUG:PIL.Image:Importing SgiImagePlugin
+DEBUG:PIL.Image:Importing SpiderImagePlugin
+DEBUG:PIL.Image:Importing SunImagePlugin
+DEBUG:PIL.Image:Importing TgaImagePlugin
+DEBUG:PIL.Image:Importing TiffImagePlugin
+DEBUG:PIL.Image:Importing WebPImagePlugin
+DEBUG:PIL.Image:Importing WmfImagePlugin
+DEBUG:PIL.Image:Importing XbmImagePlugin
+DEBUG:PIL.Image:Importing XpmImagePlugin
+DEBUG:PIL.Image:Importing XVThumbImagePlugin
+WARNING:tensorflow:From E:\python\lib\site-packages\tensorflow\python\util\tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+INFO:tensorflow:Restoring parameters from weights/YOLO_small.ckpt
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:APICaller:Sending turn_left request (10 angle)
 DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:80
+WARNING:tensorflow:From E:\python\lib\site-packages\tensorflow\python\util\tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+INFO:tensorflow:Restoring parameters from weights/YOLO_small.ckpt
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:APICaller:Sending turn_left request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=10 HTTP/1.1" 200 1
+WARNING:tensorflow:From E:\python\lib\site-packages\tensorflow\python\util\tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+INFO:tensorflow:Restoring parameters from weights/YOLO_small.ckpt
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:APICaller:Sending turn_left request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=10 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:APICaller:Sending turn_left request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=10 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+WARNING:tensorflow:From E:\python\lib\site-packages\tensorflow\python\util\tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+INFO:tensorflow:Restoring parameters from weights/YOLO_small.ckpt
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080

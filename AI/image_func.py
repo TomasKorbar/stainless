@@ -5,10 +5,10 @@ import numpy as np
 import PIL.Image as Image
 
 def get_img():
-    image_url = 'http://localhost/img_test.jpg'
+    image_url = 'http://10.10.5.198:8080/photoaf.jpg'
     destination = 'resources/image'
     
-    data = requests.get(image_url, stream=True, timeout=8)
+    data = requests.get(image_url, stream=True, timeout=20)
     img = Image.open(data.raw)
     if image_url[-3:] == 'png':
         img.save(destination + '.png')
