@@ -17,8 +17,6 @@ class Motor():
         next_step = -1 if target_angle > 0 else 1
         while target_angle > consts.HALFSTEP_ANGLE or target_angle < -consts.HALFSTEP_ANGLE:
             self._lines.set_values(consts.HALFSTEP_SEQUENCE[self._current_step])
-            print("cur step je " + str(consts.HALFSTEP_SEQUENCE[self._current_step]))
-            print("target angle je " + str(target_angle))
             self._current_step += next_step
             if self._current_step > 7:
                 self._current_step = 0
