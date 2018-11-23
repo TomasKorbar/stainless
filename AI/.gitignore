@@ -1,8 +1,12 @@
 flasky/*
 .idea/
-__pychache__/
+__pychache__/*
+# Weights
 YOLO_weight_extractor/*
+weights/*
 
+# Testing this stochastic process
+resources/*
 
 Capture.PNG
 resources/image.png
