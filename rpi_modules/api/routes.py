@@ -10,10 +10,10 @@ def move_forward():
 
 @routes.route('/move/turn', methods=["GET"])
 def turn():
-	if int(request.args.get("angle")) > 0:
-		_execute_alone(4,int(request.args.get("angle")))
+	if int(float(request.args.get("angle"))) > 0:
+		_execute_alone(4,int(float(request.args.get("angle"))))
 	else:
-		_execute_alone(3,-1 * int(request.args.get("angle")))
+		_execute_alone(3,-1 * int(float(request.args.get("angle"))))
 	return "1"
 
 @routes.route('/trash/isinrange')
