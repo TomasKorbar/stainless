@@ -8,6 +8,7 @@ weights/*
 # Testing this stochastic process
 resources/*
 
+app.log
 Capture.PNG
 resources/image.png
 YOLO_face_tf.py

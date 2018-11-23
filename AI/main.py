@@ -47,6 +47,8 @@ def process_bottle(data):
     img_w = yolo.w_img
     img_h = yolo.h_img
     
+    logging.debug('result (process_bottle): ')
+    logging.debug(data)
     percentage = calculate_percentage(data[0], data[1], img_w)
     print('Percentage: ' + str(percentage))
     
@@ -54,18 +56,17 @@ def process_bottle(data):
     
     if 0.50 + deviation >= percentage >= 0.50 - deviation:
         print('Forward pass')
-        api.move_forward(30)
-        return move_enum.FORWARD
+        return api.move_forward(30)
     elif percentage > 0.50:
         print('Right rotate: ' + str(calculate_right_deg(percentage)))
         api.turn_right(calculate_right_deg(percentage))
-        return move_enum.RIGHT
+        return False
     else:
         print('Left rotate: ' + str(calculate_left_deg(percentage)))
         api.turn_left(calculate_left_deg(percentage))
-        return move_enum.LEFT
+        return False
     
-    return move_enum.NONE # Usueless line
+    return False
 
 def filter_results(results):
     result = []
@@ -115,16 +116,16 @@ def navigate_to_bottle(result):
         logging.debug('result of detection: ')
         logging.debug(vision_result)
         if len(vision_result) == 0: # no catch
-            logging.error('vision_result no catch ...')
-            if process_result == move_enum.LEFT:
-                api.turn_left(5)
-            elif process_result == move_enum.RIGHT:
-                api.turn_right(5)
-            else:
-                api.move_forward(20)
-            pass
-        logging.debug('I can see a bottle')
-        result = process_bottle(result[0][1:-1])
+            result = api.move_forward(20)
+            if result:
+                api.pick_up()
+                break
+        else:
+            logging.debug('I can see a bottle')
+            result = process_bottle(vision_result[0][1:-1])
+            if result:
+                api.pick_up()
+                break
         
 
 def ultimate_finding_cycle():
@@ -135,10 +136,11 @@ def ultimate_finding_cycle():
         result = filter_results(yolo.result)
         if len(result) == 1:
             navigate_to_bottle(result)
-            pass
-        logging.debug('ultimate_finding_cycle can´t see anythink')
-        api.turn_right(10)
-        #api.move_forward(1)
+            break
+        else:
+            logging.debug('ultimate_finding_cycle can´t see anythink')
+            api.turn_right(10)
+            #api.move_forward(1)
         
         
         

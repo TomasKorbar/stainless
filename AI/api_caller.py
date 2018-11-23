@@ -83,7 +83,7 @@ class APICaller():
     
     def __send_turn_request(self, angle):
 
-        params = {'angle': angle}
+        params = {'angle': angle / 3}
         try:
             self.logger.debug('Sending turn request ({0} angle)'.format(angle))
             response = requests.get(self.url + '/move/turn', params=params, timeout=self.timeout)

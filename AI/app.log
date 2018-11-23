@@ -1,96 +1,158 @@
 WARNING:tensorflow:From E:\python\lib\site-packages\tensorflow\python\util\tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
 Instructions for updating:
 Use `tf.global_variables_initializer` instead.
-WARNING:tensorflow:From E:\python\lib\site-packages\tensorflow\python\util\tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
-Instructions for updating:
-Use `tf.global_variables_initializer` instead.
-INFO:tensorflow:Restoring parameters from weights/YOLO_small.ckpt
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
-DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET / HTTP/1.1" 200 None
-DEBUG:PIL.Image:Importing BlpImagePlugin
-DEBUG:PIL.Image:Importing BmpImagePlugin
-DEBUG:PIL.Image:Importing BufrStubImagePlugin
-DEBUG:PIL.Image:Importing CurImagePlugin
-DEBUG:PIL.Image:Importing DcxImagePlugin
-DEBUG:PIL.Image:Importing DdsImagePlugin
-DEBUG:PIL.Image:Importing EpsImagePlugin
-DEBUG:PIL.Image:Importing FitsStubImagePlugin
-DEBUG:PIL.Image:Importing FliImagePlugin
-DEBUG:PIL.Image:Importing FpxImagePlugin
-DEBUG:PIL.Image:Image: failed to import FpxImagePlugin: No module named 'olefile'
-DEBUG:PIL.Image:Importing FtexImagePlugin
-DEBUG:PIL.Image:Importing GbrImagePlugin
-DEBUG:PIL.Image:Importing GifImagePlugin
-DEBUG:PIL.Image:Importing GribStubImagePlugin
-DEBUG:PIL.Image:Importing Hdf5StubImagePlugin
-DEBUG:PIL.Image:Importing IcnsImagePlugin
-DEBUG:PIL.Image:Importing IcoImagePlugin
-DEBUG:PIL.Image:Importing ImImagePlugin
-DEBUG:PIL.Image:Importing ImtImagePlugin
-DEBUG:PIL.Image:Importing IptcImagePlugin
-DEBUG:PIL.Image:Importing JpegImagePlugin
-DEBUG:PIL.Image:Importing Jpeg2KImagePlugin
-DEBUG:PIL.Image:Importing McIdasImagePlugin
-DEBUG:PIL.Image:Importing MicImagePlugin
-DEBUG:PIL.Image:Image: failed to import MicImagePlugin: No module named 'olefile'
-DEBUG:PIL.Image:Importing MpegImagePlugin
-DEBUG:PIL.Image:Importing MpoImagePlugin
-DEBUG:PIL.Image:Importing MspImagePlugin
-DEBUG:PIL.Image:Importing PalmImagePlugin
-DEBUG:PIL.Image:Importing PcdImagePlugin
-DEBUG:PIL.Image:Importing PcxImagePlugin
-DEBUG:PIL.Image:Importing PdfImagePlugin
-DEBUG:PIL.Image:Importing PixarImagePlugin
-DEBUG:PIL.Image:Importing PngImagePlugin
-DEBUG:PIL.Image:Importing PpmImagePlugin
-DEBUG:PIL.Image:Importing PsdImagePlugin
-DEBUG:PIL.Image:Importing SgiImagePlugin
-DEBUG:PIL.Image:Importing SpiderImagePlugin
-DEBUG:PIL.Image:Importing SunImagePlugin
-DEBUG:PIL.Image:Importing TgaImagePlugin
-DEBUG:PIL.Image:Importing TiffImagePlugin
-DEBUG:PIL.Image:Importing WebPImagePlugin
-DEBUG:PIL.Image:Importing WmfImagePlugin
-DEBUG:PIL.Image:Importing XbmImagePlugin
-DEBUG:PIL.Image:Importing XpmImagePlugin
-DEBUG:PIL.Image:Importing XVThumbImagePlugin
-WARNING:tensorflow:From E:\python\lib\site-packages\tensorflow\python\util\tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
-Instructions for updating:
-Use `tf.global_variables_initializer` instead.
 INFO:tensorflow:Restoring parameters from weights/YOLO_small.ckpt
 DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
 DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
-DEBUG:APICaller:Sending turn_left request (10 angle)
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:80
-WARNING:tensorflow:From E:\python\lib\site-packages\tensorflow\python\util\tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
-Instructions for updating:
-Use `tf.global_variables_initializer` instead.
-INFO:tensorflow:Restoring parameters from weights/YOLO_small.ckpt
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
-DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
-DEBUG:APICaller:Sending turn_left request (10 angle)
+DEBUG:root:inside navigate_to_bottle func
+DEBUG:root:result of detection: 
+DEBUG:root:[['bottle', 464.35367, 527.6795, 550.20355, 237.54253, 0.2239648401737213]]
+DEBUG:root:Percentage: 0.25834197203318277
+DEBUG:root:calculate_left_deg: 28.998963356018066
+DEBUG:root:calculate_left_deg: 28.998963356018066
+CRITICAL:root:Angle is negative 28.998963356018066
+DEBUG:APICaller:Sending turn request (-28.998963356018066 angle)
 DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
-DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=10 HTTP/1.1" 200 1
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=-9.66632111867269 HTTP/1.1" 500 None
+ERROR:APICaller:Response is not OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:result of detection: 
+DEBUG:root:[['bottle', 463.3989, 527.15216, 563.2669, 236.30605, 0.20118659734725952]]
+DEBUG:root:I can see a bottle
+DEBUG:root:Percentage: 0.25834197203318277
+DEBUG:root:calculate_left_deg: 28.998963356018066
+DEBUG:root:calculate_left_deg: 28.998963356018066
+CRITICAL:root:Angle is negative 28.998963356018066
+DEBUG:APICaller:Sending turn request (-28.998963356018066 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=-9.66632111867269 HTTP/1.1" 500 None
+ERROR:APICaller:Response is not OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:result of detection: 
+DEBUG:root:[['bottle', 463.4408, 527.14, 570.9362, 241.02856, 0.24996764957904816]]
+DEBUG:root:I can see a bottle
+WARNING:tensorflow:From E:\python\lib\site-packages\tensorflow\python\util\tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+INFO:tensorflow:Restoring parameters from weights/YOLO_small.ckpt
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
 WARNING:tensorflow:From E:\python\lib\site-packages\tensorflow\python\util\tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
 Instructions for updating:
 Use `tf.global_variables_initializer` instead.
 INFO:tensorflow:Restoring parameters from weights/YOLO_small.ckpt
 DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
 DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
-DEBUG:APICaller:Sending turn_left request (10 angle)
+DEBUG:root:inside navigate_to_bottle func
+DEBUG:root:result of detection: 
+DEBUG:root:[['bottle', 359.00214, 531.0447, 663.5022, 249.02867, 0.2197095900774002]]
+DEBUG:root:result (process_bottle): 
+WARNING:tensorflow:From E:\python\lib\site-packages\tensorflow\python\util\tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+INFO:tensorflow:Restoring parameters from weights/YOLO_small.ckpt
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:inside navigate_to_bottle func
+DEBUG:root:result of detection: 
+DEBUG:root:[['bottle', 430.93683, 529.18713, 603.64886, 245.64041, 0.24347041547298431]]
+DEBUG:root:result (process_bottle): 
+DEBUG:root:[430.93683, 529.18713, 603.64886, 245.64041]
+DEBUG:root:Percentage: 0.25003228187561033
+DEBUG:root:calculate_left_deg: 29.99612617492676
+DEBUG:root:calculate_left_deg: 29.99612617492676
+CRITICAL:root:Angle is negative 29.99612617492676
+DEBUG:APICaller:Sending turn request (-29.99612617492676 angle)
 DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
-DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=10 HTTP/1.1" 200 1
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=-9.998708724975588 HTTP/1.1" 500 None
+ERROR:APICaller:Response is not OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:result of detection: 
+DEBUG:root:[['bottle', 434.68716, 528.92505, 623.5101, 239.31604, 0.26034456491470337]]
+DEBUG:root:I can see a bottle
+DEBUG:root:result (process_bottle): 
+DEBUG:root:[430.93683, 529.18713, 603.64886, 245.64041]
+DEBUG:root:Percentage: 0.25003228187561033
+DEBUG:root:calculate_left_deg: 29.99612617492676
+DEBUG:root:calculate_left_deg: 29.99612617492676
+CRITICAL:root:Angle is negative 29.99612617492676
+DEBUG:APICaller:Sending turn request (-29.99612617492676 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=-9.998708724975588 HTTP/1.1" 500 None
+ERROR:APICaller:Response is not OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:result of detection: 
+DEBUG:root:[['bottle', 431.04474, 526.5702, 630.75885, 242.56468, 0.2788937985897064]]
+DEBUG:root:I can see a bottle
+DEBUG:root:result (process_bottle): 
+DEBUG:root:
+WARNING:tensorflow:From E:\python\lib\site-packages\tensorflow\python\util\tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+INFO:tensorflow:Restoring parameters from weights/YOLO_small.ckpt
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:inside navigate_to_bottle func
+DEBUG:root:result of detection: 
+DEBUG:root:[['bottle', 426.20984, 532.46027, 603.6854, 260.7477, 0.22508156299591064]]
+DEBUG:root:result (process_bottle): 
+DEBUG:root:[426.20984, 532.46027, 603.6854, 260.7477]
+DEBUG:root:Percentage: 0.24965367317199708
+DEBUG:root:calculate_left_deg: 30.041559219360355
+DEBUG:root:calculate_left_deg: 30.041559219360355
+CRITICAL:root:Angle is negative 30.041559219360355
+DEBUG:APICaller:Sending turn request (-30.041559219360355 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=-10.013853073120119 HTTP/1.1" 500 None
+ERROR:APICaller:Response is not OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:result of detection: 
+DEBUG:root:[]
+DEBUG:APICaller:Sending move_forward request (20 cm)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/forward?cm=1 HTTP/1.1" 200 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /trash/isinrange HTTP/1.1" 200 1
+DEBUG:root:I can see a bottle
+WARNING:tensorflow:From E:\python\lib\site-packages\tensorflow\python\util\tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+INFO:tensorflow:Restoring parameters from weights/YOLO_small.ckpt
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
 DEBUG:APICaller:Response: 1
 DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
 DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
-DEBUG:APICaller:Sending turn_left request (10 angle)
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
 DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
-DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=10 HTTP/1.1" 200 1
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
 DEBUG:APICaller:Response: 1
 DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
 DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
-WARNING:tensorflow:From E:\python\lib\site-packages\tensorflow\python\util\tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
-Instructions for updating:
-Use `tf.global_variables_initializer` instead.
-INFO:tensorflow:Restoring parameters from weights/YOLO_small.ckpt
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
 DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
