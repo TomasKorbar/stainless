@@ -1,5 +1,5 @@
 from flask import Flask, Blueprint
-from stainless.routes import routes
+from stainless.rpi_modules.api.routes import routes
 
 application = Flask(__name__)
 application.register_blueprint(routes)
