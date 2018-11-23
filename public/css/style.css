@@ -1,0 +1,24 @@
+.image{
+	height: 30px;
+}
+*{
+	vertical-align: middle !important;
+	text-align: center;
+}
+.bg-blu{
+	background: #22A7F0;
+}
+.map{
+	min-height: 700px;
+	width: 100%;
+}
+.hidden{
+	visibility: hidden;
+}
+body{
+	width: 70%;
+	margin: 0 15%;
+}
+.header{
+	margin: 150px 0 60px 0;
+}
