@@ -16,6 +16,16 @@ def move_forward(distance):
 		t2.join()
 		distance -= 1
 
+def move_backward(distance):
+	while distance > 0:
+		t1 = Thread(target=lambda: motor_right.turn(-100))
+		t2 = Thread(target=lambda: motor_left.turn(100))
+		t1.start()
+		t2.start()
+		t1.join()
+		t2.join()
+		distance -= 1
+
 def turn_left(angle):
 	while angle > 0:
 		motor_right.turn(10)
