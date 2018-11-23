@@ -4,16 +4,16 @@ routes = Blueprint('routes', __name__)
 
 @routes.route('/move/forward')
 def move_forward():
-	pass
+	return 1
 
 @routes.route('/move/turn')
 def turn():
-	pass
+	return 1
 
 @routes.route('/trash/isinrange')
 def isinrange():
-	pass
+	return 1
 
 @routes.route('/trash/pickup')
 def pickup():
-	pass
+	return 1
