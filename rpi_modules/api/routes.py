@@ -1,10 +1,10 @@
-from flask import Flask, Blueprint
+from flask import Flask, Blueprint, Request, request
 
 routes = Blueprint('routes', __name__)
 
-@routes.route('/move/forward')
+@routes.route('/move/forward', methods=["GET"])
 def move_forward():
-	return '1'
+	return str(request.args.get('cm'))
 
 @routes.route('/move/turn')
 def turn():
