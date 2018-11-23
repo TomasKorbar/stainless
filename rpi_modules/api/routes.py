@@ -18,7 +18,7 @@ def turn():
 
 @routes.route('/trash/isinrange')
 def isinrange():
-	return '1'
+	return "1"
 
 @routes.route('/trash/pickup')
 def pickup():
