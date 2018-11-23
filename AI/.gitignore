@@ -1,0 +1,9 @@
+flasky/*
+.idea/
+__pychache__/
+YOLO_weight_extractor/*
+
+
+Capture.PNG
+resources/image.png
+YOLO_face_tf.py
