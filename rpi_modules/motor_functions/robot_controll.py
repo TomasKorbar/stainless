@@ -80,13 +80,3 @@ if __name__ == "__main__":
 		turn_left(int(sys.argv[2]))
 	elif int(sys.argv[1]) == 4:
 		turn_right(int(sys.argv[2]))
-	elif int(sys.argv[1]) == 5:
-		if (int(sys.argv[2]) == 1):
-			lower_low_arm(100)
-		elif (int(sys.argv[2]) == 2):
-			higher_high_arm(90)
-			higher_low_arm(90)
-	elif int(sys.argv[1]) == 6:
-		sys.exit(us_sensor.distance())
-
-

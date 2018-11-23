@@ -15,10 +15,6 @@ def turn():
 		_execute_alone(3,-1 * int(float(request.args.get("angle"))))
 	return "1"
 
-@routes.route('/trash/pickup')
-def pickup():
-	return '1'
-
 def _execute_alone(action, val):
 	ec = subprocess.call([
 		'python3',
