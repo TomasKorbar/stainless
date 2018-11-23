@@ -25,7 +25,7 @@ class Motor():
             elif self._current_step < 0:
                 self._current_step = 7
             target_angle += next_step * consts.HALFSTEP_ANGLE
-            time.sleep(0.002)
+            time.sleep(0.001)
 
 if __name__ == "__main__":
     m = Motor([2,3,4,17])
