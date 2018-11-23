@@ -25,6 +25,10 @@ class Motor():
             target_angle += next_step * consts.HALFSTEP_ANGLE
             time.sleep(0.001)
 
+    def __exit__(self, exception_type, exception_value, traceback):
+        self._lines.set_values([0,0,0,0])
+        self._chip.close()
+
 if __name__ == "__main__":
     m = Motor([2,3,4,17])
     m.turn(90)
