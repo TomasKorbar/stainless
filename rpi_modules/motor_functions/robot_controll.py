@@ -1,4 +1,4 @@
-from stainless.motor_functions.motor import Motor
+from stainless.rpi_modules.motor_functions.motor import Motor
 
 motor_left = Motor([19,13,6,5])
 motor_right = Motor([21,16,20,26])
