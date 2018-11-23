@@ -7,8 +7,8 @@ arm_higher = Motor([24,25,1,12])
 
 def move_forward(distance):
 	while distance > 0:
-		motor_right.turn(10)
-		motor_left.turn(10)
+		motor_right.turn(1000)
+		motor_left.turn(-1000)
 		distance -= 1
 
 def turn_left(angle):
