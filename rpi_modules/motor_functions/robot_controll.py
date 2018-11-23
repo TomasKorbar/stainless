@@ -10,7 +10,7 @@ arm_higher = Motor([24,25,1,12])
 def move_forward(distance):
 	while distance > 0:
 		t1 = Thread(target=lambda: motor_right.turn(100))
-		t2 = Thread(target=lambda: motor_left.turn(-100))
+		t2 = Thread(target=lambda: motor_left.turn(100))
 		t1.start()
 		t2.start()
 		t1.join()
@@ -20,7 +20,7 @@ def move_forward(distance):
 def move_backward(distance):
 	while distance > 0:
 		t1 = Thread(target=lambda: motor_right.turn(-100))
-		t2 = Thread(target=lambda: motor_left.turn(100))
+		t2 = Thread(target=lambda: motor_left.turn(-100))
 		t1.start()
 		t2.start()
 		t1.join()
