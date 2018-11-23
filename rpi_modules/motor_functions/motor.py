@@ -20,7 +20,7 @@ class Motor():
 			self._current_step += next_step
 			if self._current_step > 7:
 				self._current_step = 0
-			else if self._current_step < 0:
+			elif self._current_step < 0:
 				self._current_step = 7
 			time.sleep(0.001)
 
