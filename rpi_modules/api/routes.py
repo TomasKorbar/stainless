@@ -1,4 +1,3 @@
-import stainless.rpi_modules.motor_functions.robot_controll as rbcontroll
 from flask import Flask, Blueprint, Request, request
 import subprocess
 
@@ -28,7 +27,7 @@ def pickup():
 def _execute_alone(action, val):
 	subprocess.call([
 		'python3',
-		'/usr/lib/python3.5/stainless/rpi_modules/motor_functions/robot_controll',
+		'/usr/lib/python3.5/stainless/rpi_modules/motor_functions/robot_controll.py',
 		str(action),
 		str(val)
 		])
