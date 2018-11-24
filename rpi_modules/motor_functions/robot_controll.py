@@ -5,8 +5,8 @@ import sys
 
 motor_left = Motor([19,13,6,5])
 motor_right = Motor([21,16,20,26])
-arm_lower = Motor([15,17,27,22])
-arm_higher = Motor([24,25,1,12])
+arm_higher = Motor([15,17,27,22])
+arm_lower = Motor([24,25,1,12])
 us_sensor = UltrasonicSensor([2,4])
 
 def move_forward(distance):
@@ -20,8 +20,12 @@ def move_forward(distance):
 		distance -= 1
 		if us_sensor.distance() < 5:
 			lower_low_arm(100)
-			higher_high_arm(90)
-			higher_low_arm(90)
+			t1 = Thread(target=lambda:higher_high_arm(90))
+			t2 = Thread(target=lambda:higher_low_arm(90))
+			t1.start()
+			t2.start()
+			t1.join()
+			t2.join()
 			return 1
 	return 0
 
