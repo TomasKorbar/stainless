@@ -132,6 +132,7 @@ def navigate_to_bottle(result):
 
 
 def ultimate_finding_cycle():
+    print('Running ...')
     num_of_turns = 0
     while True:
         img = get_img()
