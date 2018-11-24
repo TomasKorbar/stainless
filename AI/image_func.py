@@ -5,7 +5,7 @@ import numpy as np
 import PIL.Image as Image
 
 def get_img():
-    image_url = 'http://10.10.5.198:8080/photoaf.jpg'
+    image_url = 'http://10.10.4.47:8080/photoaf.jpg'
     destination = 'resources/image'
     
     data = requests.get(image_url, stream=True, timeout=20)

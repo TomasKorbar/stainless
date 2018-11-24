@@ -143,14 +143,52 @@ def ultimate_finding_cycle():
             navigate_to_bottle(result)
             break
         else:
-            num_of_turns += 1
-            logging.debug('ultimate_finding_cycle can´t see anythink')
-            if num_of_turns < 4:
+            for i in range(2):
                 api.turn_right(10)
-            else:
+                img = get_img()
+                yolo.detect_from_cvmat(img)
+                result = filter_results(yolo.result)
+                if len(result) == 1:
+                    print('Woooow, I got an image')
+                    logging.debug('Woooow, I got an image')
+                    navigate_to_bottle(result)
+                    break
+            api.move_forward(10)
+            img = get_img()
+            yolo.detect_from_cvmat(img)
+            result = filter_results(yolo.result)
+            if len(result) == 1:
+                print('Woooow, I got an image')
+                logging.debug('Woooow, I got an image')
+                navigate_to_bottle(result)
+                break
+            for i in range(4):
                 api.turn_left(10)
-                if num_of_turns == 6:
-                    num_of_turns = 0
+                img = get_img()
+                yolo.detect_from_cvmat(img)
+                result = filter_results(yolo.result)
+                if len(result) == 1:
+                    print('Woooow, I got an image')
+                    logging.debug('Woooow, I got an image')
+                    navigate_to_bottle(result)
+                    break
+            api.move_forward(10)
+            img = get_img()
+            yolo.detect_from_cvmat(img)
+            result = filter_results(yolo.result)
+            if len(result) == 1:
+                print('Woooow, I got an image')
+                logging.debug('Woooow, I got an image')
+                navigate_to_bottle(result)
+                
+#O            num_of_turns += 1
+#            logging.debug('ultimate_finding_cycle can´t see anythink')
+#            if num_of_turns < 4:
+#                api.turn_right(10)
+#            else:
+#                api.turn_left(10)
+#                if num_of_turns == 6:
+#                    num_of_turns = 0
             #api.move_forward(1)
         
         
