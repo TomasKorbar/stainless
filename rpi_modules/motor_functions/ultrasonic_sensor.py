@@ -3,12 +3,13 @@ import time
 
 class UltrasonicSensor():
     def __init__(self, control_pins):
-        self._chip = gpiod.Chip("gpiochip0")
-        # TRIG
-        self._trig_line = self._chip.get_line(control_pins[0])
-        self._echo_line = self._chip.get_line(control_pins[1])
+        self._pins = control_pins
 
     def distance(self):
+        self._chip = gpiod.Chip("gpiochip0")
+        # TRIG
+        self._trig_line = self._chip.get_line(self._pins[0])
+        self._echo_line = self._chip.get_line(self._pins[1])
         self._trig_line.request(consumer="gpiochip0",
             type=gpiod.LINE_REQ_DIR_OUT
         )
@@ -33,5 +34,5 @@ class UltrasonicSensor():
 
         TimeElapsed = StopTime - StartTime
         distance_traveled = (TimeElapsed * 34300) / 2
-
+        self._chip.close()
         return distance_traveled
