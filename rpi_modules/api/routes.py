@@ -6,6 +6,7 @@ routes = Blueprint('routes', __name__)
 @routes.route('/move/forward', methods=["GET"])
 def move_forward():
 	_execute_alone(1, int(request.args.get("cm")))
+	
 	return "1"
 
 @routes.route('/move/turn', methods=["GET"])
@@ -15,10 +16,6 @@ def turn():
 	else:
 		_execute_alone(3,-1 * int(float(request.args.get("angle"))))
 	return "1"
-
-@routes.route('/trash/isinrange')
-def isinrange():
-	return "0"
 
 @routes.route('/trash/pickup')
 def pickup():
