@@ -31,29 +31,15 @@ class APICaller():
     
     def move_forward(self, cm):
         
-        params = {'cm': 1}
-        i = 0
-        
-        while i < cm:
+        params = {'cm': cm}        
             
-            try:
-                self.logger.debug('Sending move_forward request ({0} cm)'.format(cm))
-                response = requests.get(self.url + '/move/forward', params=params, timeout=self.timeout)
-                is_in_range_response = requests.get(self.url + '/trash/isinrange', timeout=self.timeout)
-            except requests.exceptions.Timeout:
-                self.logger.warn('move_forward timeout exception')
-                #return False
-        
-            if not response.ok or not is_in_range_response.ok:
-                self.logger.error('Response is not OK')
-                #return False
-        
-            #self.logger.debug('Response: ' + str(response.json()))
-            if is_in_range_response.json() == True:
-                return True
+        try:
+            self.logger.debug('Sending move_forward request ({0} cm)'.format(cm))
+            requests.get(self.url + '/move/forward', params=params, timeout=self.timeout)
+        except requests.exceptions.Timeout:
+            self.logger.warn('move_forward timeout exception')
             
-            
-        return False
+        return True
     
     def is_in_range(self):
         """
@@ -83,7 +69,7 @@ class APICaller():
     
     def __send_turn_request(self, angle):
 
-        params = {'angle': angle / 3}
+        params = {'angle': angle}
         try:
             self.logger.debug('Sending turn request ({0} angle)'.format(angle))
             response = requests.get(self.url + '/move/turn', params=params, timeout=self.timeout)

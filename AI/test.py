@@ -1,14 +1,21 @@
 # -*- coding: utf-8 -*-
-from YOLO_small_tf import YOLO_TF
-import time
+import cv2
+import numpy as np
 
-yolo = YOLO_TF()
+def is_cell_red(cell):
+    return cell[3] > 180
 
-yolo.imshow = False
-s = time.time()
-yolo.detect_from_file('resources/test.jpg')
-print('Detection time: ' + str(time.time()-s))
+def check_row(row):
+    distance = 0
+    large = 0
+    
 
-result = yolo.result
+def detect(image):
+    # BGR
+    largest_distance = 0
+    for row in np.array(image)[0]:
+        print(row)
+    
+    
 
-print('result')
+detect(cv2.imread('resources/test_img.PNG'))

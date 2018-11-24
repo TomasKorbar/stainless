@@ -16,5 +16,4 @@ def get_img():
     else:
         img.save(destination + '.jpg')
         img = cv2.imread(destination + '.jpg')
-    
     return img

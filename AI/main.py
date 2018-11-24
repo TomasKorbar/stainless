@@ -108,6 +108,9 @@ def navigate_to_bottle(result):
     logging.debug('result of detection: ')
     logging.debug(result)
     process_result = process_bottle(result[0][1:-1])
+    if process_result != move_enum.FORWARD:
+        api.move_forward(500)
+    raise ValueError('Sorry, model hasn´t been trained pretty well, we cannot continue ...')
     
     while True:
         img = get_img()
@@ -129,17 +132,24 @@ def navigate_to_bottle(result):
 
 
 def ultimate_finding_cycle():
-    
+    num_of_turns = 0
     while True:
         img = get_img()
         yolo.detect_from_cvmat(img)
         result = filter_results(yolo.result)
         if len(result) == 1:
+            print('Woooow, I got an image')
             navigate_to_bottle(result)
             break
         else:
+            num_of_turns += 1
             logging.debug('ultimate_finding_cycle can´t see anythink')
-            api.turn_right(10)
+            if num_of_turns < 4:
+                api.turn_right(10)
+            else:
+                api.turn_left(10)
+                if num_of_turns == 8:
+                    num_of_turns = 0
             #api.move_forward(1)
         
         

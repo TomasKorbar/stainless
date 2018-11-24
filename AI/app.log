@@ -45,3 +45,533 @@ DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/forward?cm=1 HTTP
 DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
 DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /trash/isinrange HTTP/1.1" 200 1
 DEBUG:APICaller:Sending pick_up request
+WARNING:tensorflow:From E:\python\lib\site-packages\tensorflow\python\util\tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+INFO:tensorflow:Restoring parameters from weights/YOLO_small.ckpt
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+WARNING:tensorflow:From E:\python\lib\site-packages\tensorflow\python\util\tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+INFO:tensorflow:Restoring parameters from weights/YOLO_small.ckpt
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+WARNING:tensorflow:From E:\python\lib\site-packages\tensorflow\python\util\tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+INFO:tensorflow:Restoring parameters from weights/YOLO_small.ckpt
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:APICaller:Sending move_forward request (500 cm)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+WARNING:tensorflow:From E:\python\lib\site-packages\tensorflow\python\util\tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+INFO:tensorflow:Restoring parameters from weights/YOLO_small.ckpt
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+WARNING:tensorflow:From E:\python\lib\site-packages\tensorflow\python\util\tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+INFO:tensorflow:Restoring parameters from weights/YOLO_small.ckpt
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:APICaller:Sending move_forward request (500 cm)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+WARNING:tensorflow:From E:\python\lib\site-packages\tensorflow\python\util\tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+INFO:tensorflow:Restoring parameters from weights/YOLO_small.ckpt
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+WARNING:tensorflow:From E:\python\lib\site-packages\tensorflow\python\util\tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+INFO:tensorflow:Restoring parameters from weights/YOLO_small.ckpt
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:inside navigate_to_bottle func
+DEBUG:root:result of detection: 
+DEBUG:root:[['bottle', 1510.5831, 605.1511, 735.11304, 307.0021, 0.21026243269443512]]
+DEBUG:root:result (process_bottle): 
+DEBUG:root:[1510.5831, 605.1511, 735.11304, 307.0021]
+DEBUG:root:Percentage: 0.5509724617004395
+DEBUG:APICaller:Sending move_forward request (30 cm)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+WARNING:tensorflow:From E:\python\lib\site-packages\tensorflow\python\util\tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+INFO:tensorflow:Restoring parameters from weights/YOLO_small.ckpt
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=3.3333333333333335 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:inside navigate_to_bottle func
+DEBUG:root:result of detection: 
+DEBUG:root:[['bottle', 1523.3406, 676.13965, 770.40356, 321.3878, 0.23843786120414734]]
+DEBUG:root:result (process_bottle): 
+DEBUG:root:[1523.3406, 676.13965, 770.40356, 321.3878]
+DEBUG:root:Percentage: 0.5727813084920247
+DEBUG:root:calculate_right_deg: 8.733757019042962
+DEBUG:root:calculate_right_deg: 8.733757019042962
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (8.733757019042962 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=2.911252339680987 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:APICaller:Sending move_forward request (500 cm)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+WARNING:tensorflow:From E:\python\lib\site-packages\tensorflow\python\util\tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+INFO:tensorflow:Restoring parameters from weights/YOLO_small.ckpt
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+WARNING:tensorflow:From E:\python\lib\site-packages\tensorflow\python\util\tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+INFO:tensorflow:Restoring parameters from weights/YOLO_small.ckpt
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=10 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:inside navigate_to_bottle func
+DEBUG:root:result of detection: 
+DEBUG:root:[['bottle', 1385.7872, 681.16595, 1168.2983, 481.99817, 0.24828705191612244]]
+DEBUG:root:result (process_bottle): 
+DEBUG:root:[1385.7872, 681.16595, 1168.2983, 481.99817]
+DEBUG:root:Percentage: 0.538269058863322
+DEBUG:APICaller:Sending move_forward request (30 cm)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+WARNING:tensorflow:From E:\python\lib\site-packages\tensorflow\python\util\tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+INFO:tensorflow:Restoring parameters from weights/YOLO_small.ckpt
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=10 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=10 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=10 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+CRITICAL:root:Angle is negative 10
+DEBUG:APICaller:Sending turn request (-10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=-10 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+CRITICAL:root:Angle is negative 10
+DEBUG:APICaller:Sending turn request (-10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=-10 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+CRITICAL:root:Angle is negative 10
+DEBUG:APICaller:Sending turn request (-10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=-10 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+CRITICAL:root:Angle is negative 10
+DEBUG:APICaller:Sending turn request (-10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=-10 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+CRITICAL:root:Angle is negative 10
+DEBUG:APICaller:Sending turn request (-10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+WARNING:tensorflow:From E:\python\lib\site-packages\tensorflow\python\util\tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+INFO:tensorflow:Restoring parameters from weights/YOLO_small.ckpt
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=10 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=10 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=10 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:inside navigate_to_bottle func
+DEBUG:root:result of detection: 
+DEBUG:root:[['bottle', 1205.4741, 650.86206, 597.18384, 194.03174, 0.21866928040981293]]
+DEBUG:root:result (process_bottle): 
+DEBUG:root:[1205.4741, 650.86206, 597.18384, 194.03174]
+DEBUG:root:Percentage: 0.4834208806355794
+DEBUG:APICaller:Sending move_forward request (30 cm)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+WARNING:tensorflow:From E:\python\lib\site-packages\tensorflow\python\util\tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+INFO:tensorflow:Restoring parameters from weights/YOLO_small.ckpt
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=10 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=10 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:ultimate_finding_cycle can´t see anythink
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (10 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=10 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.5.198:8080
+DEBUG:urllib3.connectionpool:http://10.10.5.198:8080 "GET /photoaf.jpg HTTP/1.1" 200 None
+DEBUG:root:inside navigate_to_bottle func
+DEBUG:root:result of detection: 
+DEBUG:root:[['bottle', 1523.4932, 666.4166, 705.3535, 282.06342, 0.32495272159576416]]
+DEBUG:root:result (process_bottle): 
+DEBUG:root:[1523.4932, 666.4166, 705.3535, 282.06342]
+DEBUG:root:Percentage: 0.5702890078226726
+DEBUG:root:calculate_right_deg: 8.434680938720707
+DEBUG:root:calculate_right_deg: 8.434680938720707
+DEBUG:root:Turning right
+DEBUG:APICaller:Sending turn request (8.434680938720707 angle)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
+DEBUG:urllib3.connectionpool:http://10.10.4.66:5000 "GET /move/turn?angle=8.434680938720707 HTTP/1.1" 200 1
+DEBUG:APICaller:Response: 1
+DEBUG:APICaller:Sending move_forward request (500 cm)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.10.4.66:5000
