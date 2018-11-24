@@ -1,4 +1,5 @@
 from stainless.rpi_modules.motor_functions.motor import Motor
+from stainless.rpi_modules.motor_functions.ultrasonic_sensor import UltrasonicSensor
 from threading import Thread
 import sys
 
@@ -6,6 +7,7 @@ motor_left = Motor([19,13,6,5])
 motor_right = Motor([21,16,20,26])
 arm_lower = Motor([15,17,27,22])
 arm_higher = Motor([24,25,1,12])
+us_sensor = UltrasonicSensor([2,4])
 
 def move_forward(distance):
 	while distance > 0:
@@ -68,11 +70,13 @@ if __name__ == "__main__":
 		turn_left(int(sys.argv[2]))
 	elif int(sys.argv[1]) == 4:
 		turn_right(int(sys.argv[2]))
-	elif int(sys.argv[1]) == 4:
+	elif int(sys.argv[1]) == 5:
 		if (int(sys.argv[2]) == 1):
 			lower_low_arm(100)
-		else if (int(sys.argv[2]) == 2):
+		elif (int(sys.argv[2]) == 2):
 			higher_high_arm(90)
 			higher_low_arm(90)
+	elif int(sys.argv[1]) == 6:
+		sys.exit(us_sensor.distance())
 
 
