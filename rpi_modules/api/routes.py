@@ -6,7 +6,7 @@ routes = Blueprint('routes', __name__)
 @routes.route('/move/forward', methods=["GET"])
 def move_forward():
 	_execute_alone(1, int(request.args.get("cm")))
-	
+	if _execute_alone(6,0) < 0.01
 	return "1"
 
 @routes.route('/move/turn', methods=["GET"])
