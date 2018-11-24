@@ -149,7 +149,7 @@ def ultimate_finding_cycle():
                 api.turn_right(10)
             else:
                 api.turn_left(10)
-                if num_of_turns == 8:
+                if num_of_turns == 6:
                     num_of_turns = 0
             #api.move_forward(1)
         
