@@ -72,7 +72,7 @@ class APICaller():
         raise: TimeoutException
         """
         self.logger.debug('Sending pick_up request')
-        response = requests.get('trash/pickup', timeout=self.timeout)
+        response = requests.get(self.url + '/trash/pickup', timeout=self.timeout)
         if not response.ok:
             self.logger.error('Response is not OK')
             return False

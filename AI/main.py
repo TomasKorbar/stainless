@@ -126,7 +126,7 @@ def navigate_to_bottle(result):
             if result:
                 api.pick_up()
                 break
-        
+
 
 def ultimate_finding_cycle():
     
