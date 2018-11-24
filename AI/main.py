@@ -139,6 +139,7 @@ def ultimate_finding_cycle():
         result = filter_results(yolo.result)
         if len(result) == 1:
             print('Woooow, I got an image')
+            logging.debug('Woooow, I got an image')
             navigate_to_bottle(result)
             break
         else:
@@ -159,5 +160,5 @@ def ultimate_finding_cycle():
 def main():
     ultimate_finding_cycle()
 
-if __name__ == '__main__':    
+if __name__ == '__main__':
     main()
