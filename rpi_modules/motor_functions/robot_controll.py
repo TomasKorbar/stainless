@@ -18,6 +18,12 @@ def move_forward(distance):
 		t1.join()
 		t2.join()
 		distance -= 1
+		if us_sensor.distance() < 5:
+			lower_low_arm(100)
+			higher_high_arm(90)
+			higher_low_arm(90)
+			return 1
+	return 0
 
 def move_backward(distance):
 	while distance > 0:
@@ -63,20 +69,10 @@ def lower_low_arm(angle):
 
 if __name__ == "__main__":
 	if int(sys.argv[1]) == 1:
-		move_forward(int(sys.argv[2]))
+		sys.exit(move_forward(int(sys.argv[2])))
 	elif int(sys.argv[1]) == 2:
 		move_backward(int(sys.argv[2]))
 	elif int(sys.argv[1]) == 3:
 		turn_left(int(sys.argv[2]))
 	elif int(sys.argv[1]) == 4:
 		turn_right(int(sys.argv[2]))
-	elif int(sys.argv[1]) == 5:
-		if (int(sys.argv[2]) == 1):
-			lower_low_arm(100)
-		elif (int(sys.argv[2]) == 2):
-			higher_high_arm(90)
-			higher_low_arm(90)
-	elif int(sys.argv[1]) == 6:
-		sys.exit(us_sensor.distance())
-
-

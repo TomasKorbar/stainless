@@ -5,9 +5,7 @@ routes = Blueprint('routes', __name__)
 
 @routes.route('/move/forward', methods=["GET"])
 def move_forward():
-	_execute_alone(1, int(request.args.get("cm")))
-	if _execute_alone(6,0) < 0.01
-	return "1"
+	return str(_execute_alone(1, int(request.args.get("cm"))))
 
 @routes.route('/move/turn', methods=["GET"])
 def turn():
@@ -17,14 +15,11 @@ def turn():
 		_execute_alone(3,-1 * int(float(request.args.get("angle"))))
 	return "1"
 
-@routes.route('/trash/pickup')
-def pickup():
-	return '1'
-
 def _execute_alone(action, val):
-	subprocess.call([
+	ec = subprocess.call([
 		'python3',
 		'/usr/lib/python3.5/stainless/rpi_modules/motor_functions/robot_controll.py',
 		str(action),
 		str(val)
 		])
+	return ec
